@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "Midnight Messenger for Facebook Messenger™",
+  "short_name": "Midnight Messenger",
+  "version": "0.0.1",
+
+  "description": "A theme created for Facebook Messenger to give your eyes a break with a darker layout.",
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://messenger.com/*", "*://*.messenger.com/*"],
+      "run_at": "document_end",
+      "js": ["js/midnight-messenger.js"]
+    }
+  ],
+
+  "web_accessible_resources": ["*"]
+}

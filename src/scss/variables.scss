@@ -1,0 +1,26 @@
+$color_accent: #365899;
+
+// Theme Colors
+$shade-900: #141517;
+$shade-100: lighten($shade-900, 24%);
+$shade-200: lighten($shade-900, 21%);
+$shade-300: lighten($shade-900, 18%);
+$shade-400: lighten($shade-900, 15%);
+$shade-500: lighten($shade-900, 12%);
+$shade-600: lighten($shade-900, 9%);
+$shade-700: lighten($shade-900, 6%);
+$shade-800: lighten($shade-900, 3%);
+
+$light-500: #dcdcdc;
+$light-100: lighten($light-500, 12%);
+$light-200: lighten($light-500, 9%);
+$light-300: lighten($light-500, 6%);
+$light-400: lighten($light-500, 3%);
+$light-600: darken($light-500, 3%);
+$light-700: darken($light-500, 6%);
+$light-800: darken($light-500, 9%);
+$light-900: darken($light-500, 12%);
+
+// Font Colors
+$font_primary: $light-500;
+$font_secondary: #888;

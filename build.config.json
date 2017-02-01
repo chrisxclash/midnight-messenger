@@ -1,0 +1,87 @@
+{
+  "tasks": {
+    "html": { "config": { "ignore": true } },
+    "email": { "config": { "ignore": true } },
+    "css": {
+      "builds": [
+        {
+          "environment": "dev",
+          "directory": {
+            "entry": "src/scss",
+            "output": "dist/css"
+          },
+          "files": [{
+            "entry": "midnight-messenger.scss",
+            "output": "midnight-messenger.css"
+          }],
+          "compress": false
+        }, {
+          "environment": "prod",
+          "directory": {
+            "entry": "src/scss",
+            "output": "dist/css"
+          },
+          "files": [{
+            "entry": "midnight-messenger.scss",
+            "output": "midnight-messenger.css"
+          }],
+          "compress": true
+        }
+      ]
+    },
+    "js": {
+      "builds": [
+        {
+          "environment": "dev",
+          "directory": {
+            "entry": "src/js",
+            "output": "dist/js"
+          },
+          "files": [{
+            "entry": "main.js",
+            "output": "midnight-messenger.js"
+          }],
+          "compress": false
+        }, {
+          "environment": "prod",
+          "directory": {
+            "entry": "src/js",
+            "output": "dist/js"
+          },
+          "files": [{
+            "entry": "main.js",
+            "output": "midnight-messenger.js"
+          }],
+          "compress": true
+        }
+      ]
+    },
+    "assets": {
+      "builds": [
+        {
+          "environment": "dev",
+          "directory": {
+            "entry": "",
+            "output": "dist"
+          },
+          "files": [{
+            "entry": "manifest.json"
+          }, {
+            "entry": "icon*.png"
+          }]
+        }, {
+          "environment": "prod",
+          "directory": {
+            "entry": "",
+            "output": "dist"
+          },
+          "files": [{
+            "entry": "manifest.json"
+          }, {
+            "entry": "icon*.png"
+          }]
+        }
+      ]
+    }
+  }
+}

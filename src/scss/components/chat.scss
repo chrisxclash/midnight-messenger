@@ -1,0 +1,43 @@
+#{$chat_timestamp} {
+  color: $font_secondary;
+}
+
+#{$chat_bubble_other} {
+  background: $shade-700;
+  color: $font_secondary;
+
+  a {
+    color: $font_secondary;
+  }
+}
+
+#{$chat_bubble_self} {
+  background: $font_secondary;
+  color: $shade-900;
+
+  a {
+    color: $shade-900;
+  }
+}
+
+#{$chat_img_bubble} {
+  background: $shade-700;
+  border: 1px solid $shade-800;
+
+  #{$chat_img_bubble_title} {
+    color: $font_primary;
+  }
+
+  #{$chat_img_bubble_body} {
+    color: $font_secondary;
+  }
+
+  #{$chat_img_bubble_source} {
+    color: $font_secondary;
+  }
+}
+
+#{$chat_message_bar} {
+  background: $shade-800;
+  border-top-color: $shade-900;
+}

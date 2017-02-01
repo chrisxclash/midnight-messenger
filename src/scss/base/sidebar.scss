@@ -1,0 +1,22 @@
+#{$sidebar} {
+  background: $shade-800;
+}
+
+#{$sidebar_header} {
+  background: $shade-600;
+  border-bottom: 1px solid $shade-700;
+}
+
+#{$sidebar_title} {
+  color: $font_secondary;
+}
+
+#{$sidebar_input} {
+  background: $shade-400;
+  color: $font_primary;
+
+  &::-webkit-input-placeholder { color: $font_secondary; }
+  &:-moz-placeholder { color: $font_secondary; }
+  &::-moz-placeholder { color: $font_secondary; }
+  &:-ms-input-placeholder { color: $font_secondary; }
+}

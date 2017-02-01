@@ -1,0 +1,16 @@
+#{$dialog_body} {
+  background: $shade-700;
+  color: $font_primary;
+}
+
+#{$header_block} {
+  border-bottom-color: $shade-600;
+}
+
+#{$dialog_nib} {
+  display: none;
+}
+
+#{$dialog_selected} {
+  background: $shade-500;
+}

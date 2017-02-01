@@ -1,0 +1,27 @@
+#{$user_item},
+#{$user_small_item} {
+  &:hover {
+    background: rgba(255, 255, 255, 0.01);
+  }
+
+  &:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+  }
+}
+
+#{$user_name},
+#{$user_small_name} {
+  color: $font_primary;
+}
+
+#{$user_message} {
+  color: $font_secondary;
+}
+
+#{$user_timestamp} {
+  color: $font_secondary;
+}

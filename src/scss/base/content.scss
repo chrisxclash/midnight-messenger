@@ -1,0 +1,16 @@
+#{$content} {
+  border-left-color: $shade-700;
+}
+
+#{$content_header} {
+  background: $shade-600;
+  border-bottom: 1px solid $shade-700;
+}
+
+#{$content_header_text} {
+  color: $font_primary;
+}
+
+#{$content_header_subtext} {
+  color: $font_secondary;
+}
