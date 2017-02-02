@@ -1,14 +1,19 @@
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const path = require('path');
 
 module.exports = {
-  entry: './src/js/main.js',
+  entry: './src/js/index.js',
   output: {
-    filename: 'dist/js/midnight-messenger.js',
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'js/messenger-midnight.js',
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new CopyWebpackPlugin([
-      { from: './manifest.json', to: 'dist/manifest.json' },
-      { from: './icon*.png', to: 'dist' },
+      { from: './manifest.json', to: 'manifest.json' },
+      { from: './icon*.png' },
     ]),
   ],
   module: {
@@ -17,17 +22,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
-        query: {
-          presets: ['es2015'],
-        },
+        options: { presets: ['es2015'] },
       },
-      {
-        test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader'],
-      },
+      { test: /\.scss$/, loader: 'style-loader!css-loader!sass-loader' },
     ],
-  },
-  resolve: {
-    extensions: ['.js', '.es6'],
   },
 };
