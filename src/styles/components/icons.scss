@@ -1,0 +1,9 @@
+#{$icon},
+#{$game_icon} {
+  filter: contrast(0) grayscale(1) brightness(1) sepia(100%) saturate(0);
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
