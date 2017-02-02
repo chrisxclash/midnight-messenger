@@ -23,7 +23,12 @@ Here's a few things you'll need to get started:
 4. `npm run build` (or `npm run watch` for continual building)
 5. In Chrome, go to `chrome://extensions` and toggle the Developer Mode option (top right) to "On"
 6. Click `Load Unpacked Extension` and load up your `dist/` folder (the one containing `manifest.json`)
-7. Make changes at your leisure!
+
+#### Building
+
+1. `npm run build` (or `npm run watch` for continual building)
+2. Make changes at your leisure!
+3. **Note** - Any changes to js files must be reloaded in `chrome://extensions` with either `ctrl/cmd + r` or click the "Reload" button under the Midnight Messenger extension
 
 ### License
 
