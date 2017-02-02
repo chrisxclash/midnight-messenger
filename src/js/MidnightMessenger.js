@@ -4,17 +4,22 @@ class MidnightMessenger {
   }
 
   injectStyles() {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
+    const style = document.createElement('style');
 
     this.stylesheets.forEach(stylesheet => {
       if (stylesheet.enabled && !stylesheet.enabled()) {
         return;
       }
 
-      const node = link.cloneNode();
-      node.href = stylesheet.url;
+      const node = style.cloneNode();
+      node.type = 'text/css';
+
+      if (node.styleSheet) {
+        node.styleSheet.cssText = stylesheet.styleText;
+      } else {
+        node.appendChild(document.createTextNode(stylesheet.styleText));
+      }
+
       document.body.appendChild(node);
     });
   }

@@ -1,13 +1,12 @@
-import Browser from './Browser';
 import MidnightMessenger from './MidnightMessenger';
 
-const browser = new Browser();
+import defaultStylesheet from '../styles/midnight-messenger.scss';
 
 // Stylesheets
 const STYLESHEETS = [
   {
     id: 'midnight-messenger',
-    url: browser.url('css/midnight-messenger.css'),
+    styleText: defaultStylesheet,
   },
 ];
 
