@@ -49,7 +49,7 @@ rules:
   id-name-format: 0
   mixin-name-format: 0
   placeholder-name-format: 1
-  variable-name-format: 1
+  variable-name-format: 0
 
   # Style Guide
   bem-depth: 0
